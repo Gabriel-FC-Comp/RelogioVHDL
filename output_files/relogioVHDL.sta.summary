@@ -1,0 +1,317 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clock'
+Slack : -11.260
+TNS   : -1234.832
+
+Type  : Slow 1200mV 85C Model Setup 'moduloTempo:tempModule|timeMemory:tempMemo|internalClockHour'
+Slack : -3.504
+TNS   : -66.682
+
+Type  : Slow 1200mV 85C Model Setup 'enter'
+Slack : -3.304
+TNS   : -197.179
+
+Type  : Slow 1200mV 85C Model Setup 'moduloTempo:tempModule|minClk'
+Slack : -2.644
+TNS   : -52.973
+
+Type  : Slow 1200mV 85C Model Setup 'prox'
+Slack : 0.163
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'enter'
+Slack : 0.343
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'moduloTempo:tempModule|timeMemory:tempMemo|internalClockHour'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'moduloTempo:tempModule|minClk'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'prox'
+Slack : 0.378
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clock'
+Slack : -10.875
+TNS   : -720.617
+
+Type  : Slow 1200mV 85C Model Recovery 'moduloTempo:tempModule|hourClk'
+Slack : -5.844
+TNS   : -5.844
+
+Type  : Slow 1200mV 85C Model Recovery 'moduloTempo:tempModule|minClk'
+Slack : -3.570
+TNS   : -106.395
+
+Type  : Slow 1200mV 85C Model Recovery 'moduloTempo:tempModule|timeMemory:tempMemo|internalClockHour'
+Slack : -3.540
+TNS   : -100.722
+
+Type  : Slow 1200mV 85C Model Recovery 'enter'
+Slack : -2.218
+TNS   : -3.271
+
+Type  : Slow 1200mV 85C Model Removal 'clock'
+Slack : 0.785
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'enter'
+Slack : 0.890
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'moduloTempo:tempModule|timeMemory:tempMemo|internalClockHour'
+Slack : 1.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'moduloTempo:tempModule|minClk'
+Slack : 1.503
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'moduloTempo:tempModule|hourClk'
+Slack : 2.123
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -317.272
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'enter'
+Slack : -3.000
+TNS   : -98.404
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'prox'
+Slack : -3.000
+TNS   : -8.612
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'moduloTempo:tempModule|minClk'
+Slack : -1.403
+TNS   : -43.493
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'moduloTempo:tempModule|timeMemory:tempMemo|internalClockHour'
+Slack : -1.403
+TNS   : -43.493
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'moduloTempo:tempModule|hourClk'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Setup 'clock'
+Slack : -10.214
+TNS   : -1121.904
+
+Type  : Slow 1200mV 0C Model Setup 'moduloTempo:tempModule|timeMemory:tempMemo|internalClockHour'
+Slack : -3.091
+TNS   : -57.278
+
+Type  : Slow 1200mV 0C Model Setup 'enter'
+Slack : -2.943
+TNS   : -176.692
+
+Type  : Slow 1200mV 0C Model Setup 'moduloTempo:tempModule|minClk'
+Slack : -2.259
+TNS   : -44.545
+
+Type  : Slow 1200mV 0C Model Setup 'prox'
+Slack : 0.233
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock'
+Slack : 0.291
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'enter'
+Slack : 0.308
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'moduloTempo:tempModule|timeMemory:tempMemo|internalClockHour'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'moduloTempo:tempModule|minClk'
+Slack : 0.326
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'prox'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clock'
+Slack : -9.881
+TNS   : -656.586
+
+Type  : Slow 1200mV 0C Model Recovery 'moduloTempo:tempModule|hourClk'
+Slack : -5.287
+TNS   : -5.287
+
+Type  : Slow 1200mV 0C Model Recovery 'moduloTempo:tempModule|minClk'
+Slack : -3.246
+TNS   : -96.576
+
+Type  : Slow 1200mV 0C Model Recovery 'moduloTempo:tempModule|timeMemory:tempMemo|internalClockHour'
+Slack : -3.168
+TNS   : -89.952
+
+Type  : Slow 1200mV 0C Model Recovery 'enter'
+Slack : -1.987
+TNS   : -2.687
+
+Type  : Slow 1200mV 0C Model Removal 'clock'
+Slack : 0.746
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'enter'
+Slack : 0.812
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'moduloTempo:tempModule|timeMemory:tempMemo|internalClockHour'
+Slack : 1.343
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'moduloTempo:tempModule|minClk'
+Slack : 1.459
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'moduloTempo:tempModule|hourClk'
+Slack : 1.956
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -317.272
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'enter'
+Slack : -3.000
+TNS   : -98.404
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'prox'
+Slack : -3.000
+TNS   : -8.612
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'moduloTempo:tempModule|minClk'
+Slack : -1.403
+TNS   : -43.493
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'moduloTempo:tempModule|timeMemory:tempMemo|internalClockHour'
+Slack : -1.403
+TNS   : -43.493
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'moduloTempo:tempModule|hourClk'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Fast 1200mV 0C Model Setup 'clock'
+Slack : -4.649
+TNS   : -499.258
+
+Type  : Fast 1200mV 0C Model Setup 'moduloTempo:tempModule|timeMemory:tempMemo|internalClockHour'
+Slack : -0.934
+TNS   : -10.570
+
+Type  : Fast 1200mV 0C Model Setup 'enter'
+Slack : -0.870
+TNS   : -47.292
+
+Type  : Fast 1200mV 0C Model Setup 'moduloTempo:tempModule|minClk'
+Slack : -0.451
+TNS   : -4.780
+
+Type  : Fast 1200mV 0C Model Setup 'prox'
+Slack : 0.654
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : 0.141
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'enter'
+Slack : 0.150
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'moduloTempo:tempModule|timeMemory:tempMemo|internalClockHour'
+Slack : 0.153
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'moduloTempo:tempModule|minClk'
+Slack : 0.155
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'prox'
+Slack : 0.166
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clock'
+Slack : -4.506
+TNS   : -326.240
+
+Type  : Fast 1200mV 0C Model Recovery 'moduloTempo:tempModule|hourClk'
+Slack : -2.153
+TNS   : -2.153
+
+Type  : Fast 1200mV 0C Model Recovery 'moduloTempo:tempModule|timeMemory:tempMemo|internalClockHour'
+Slack : -1.036
+TNS   : -27.342
+
+Type  : Fast 1200mV 0C Model Recovery 'moduloTempo:tempModule|minClk'
+Slack : -1.016
+TNS   : -29.141
+
+Type  : Fast 1200mV 0C Model Recovery 'enter'
+Slack : -0.505
+TNS   : -0.505
+
+Type  : Fast 1200mV 0C Model Removal 'enter'
+Slack : 0.397
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'clock'
+Slack : 0.524
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'moduloTempo:tempModule|timeMemory:tempMemo|internalClockHour'
+Slack : 0.691
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'moduloTempo:tempModule|minClk'
+Slack : 0.778
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'moduloTempo:tempModule|hourClk'
+Slack : 0.883
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -235.368
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'enter'
+Slack : -3.000
+TNS   : -73.673
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'prox'
+Slack : -3.000
+TNS   : -7.648
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'moduloTempo:tempModule|minClk'
+Slack : -1.000
+TNS   : -31.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'moduloTempo:tempModule|timeMemory:tempMemo|internalClockHour'
+Slack : -1.000
+TNS   : -31.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'moduloTempo:tempModule|hourClk'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------
