@@ -1,0 +1,46 @@
+-- Bibliotecas
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+-- Declaração da Entidade
+ENTITY timeMemory IS
+PORT(
+	clkHour : IN std_logic;
+	clkMin : IN std_logic;
+	rstHour : IN std_logic;
+	rstMin : IN std_logic;
+	hourOut : OUT natural;
+	minOut : OUT natural
+);
+END timeMemory;
+
+-- Declaração da Arquitetura
+ARCHITECTURE rtc OF timeMemory IS
+	SIGNAL hora, min : natural := 0;
+BEGIN
+	
+	PROCESS(clkHour,clkMin,rstHour,rstMin,hora,min)
+	BEGIN
+		IF(rising_edge(clkHour)) THEN
+			hora <= hora + 1;
+		END IF;
+		
+		IF(rising_edge(clkMin)) THEN
+			min <= min + 1;
+		END IF;
+		
+		IF(rising_edge(rstHour) OR hora = 24) THEN
+			hora <= 0;
+		END IF;
+		
+		IF(rising_edge(rstMin) OR min = 60) THEN
+			min <= 0;
+		END IF;
+		
+	END PROCESS;
+	
+	hourOut <= hora;
+	minOut <= min;
+	
+END rtc;

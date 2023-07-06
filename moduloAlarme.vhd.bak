@@ -1,0 +1,63 @@
+-- Bibliotecas
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+-- Descrição da Entidade
+ENTITY moduloAlarme IS
+PORT(
+	clock : IN std_logic;
+	habilitaEdicao : IN std_logic;
+	reset : IN std_logic;
+	control : IN std_logic;
+	parametro_a_editar : IN std_logic;
+	horaAtual,minAtual : IN natural;
+	hourOut,minOut : OUT natural;
+	acionaAlarme : OUT std_logic;
+);
+END moduloAlarme;
+
+ARCHITECTURE rtc OF moduloAlarme IS
+	-- Declaração de sinais
+	SIGNAL horaAlarme, minutoAlarme : natural := 0;
+	
+BEGIN
+	
+	PROCESS(control)
+	BEGIN
+		
+		IF(falling_edge(control)) THEN
+		
+			IF(habilitaEdicao = '1') THEN -- Caso deseje-se editar um parâmetro do alarme
+				IF(reset = '1') THEN -- Se deseja-se zerar o parâmetro
+					IF(parametro_a_editar = '0') THEN
+						horaAlarme <= 0;
+					ELSE
+						minutoAlarme <= 0;
+					END IF; -- parametro_a_editar
+						
+				ELSE
+					IF(parametro_a_editar = '0') THEN
+						IF(horaAlarme >= 24) THEN
+							horaAlarme <= 0;
+						ELSE
+							horaAlarme <= horaAlarme+1;
+						END IF; -- horaAlarme
+					ELSE
+						IF(minutoAlarme >= 60) THEN
+							minutoAlarme <= 0;
+						ELSE
+							minutoAlarme <= minutoAlarme+1;
+						END IF; -- minutoAlarme
+								
+					END IF; -- parametro_a_editar
+							
+				END IF; -- reset
+					
+			END IF; -- editaParametro
+		
+		END IF; -- falling_edge(control)
+		
+	END PROCESS;
+	
+END rtc;

@@ -1,0 +1,67 @@
+-- Bibliotecas
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+-- Descrição da Entidade
+ENTITY moduloCronometro IS
+PORT(
+	clock : IN std_logic;
+	habilitaContagem : IN std_logic;
+	reset : IN std_logic;
+	control : IN std_logic;
+	centSegOut,segOut,minOut, hourOut : OUT natural;
+);
+END moduloCronometro;
+
+-- Descrição da Arquitetura
+ARCHITECTURE rtc OF moduloTempo IS
+	-- Declaração de sinais
+	SIGNAL ticks,centiSegundos,segundos,minutos,horas : natural := 0;
+	
+BEGIN
+
+	PROCESS(clock)
+	BEGIN
+		IF(habilitaContagem = '1') THEN
+		
+			IF(rising_edge(clock)) THEN
+				ticks <= ticks+1;
+			END IF;
+		
+			IF(ticks >= 50000000) THEN
+				ticks <= 0;
+				centiSegundos <= centiSegundos + 1;
+			END IF;
+			
+			IF(centiSegundos >= 60) THEN
+				centiSegundos <= 0;
+				segundos <= segundos + 1;
+			END IF;
+			
+			IF(segundos >= 60) THEN
+				segundos <= 0;
+				minutos <= minutos + 1;
+			END IF;
+			
+			IF(minutos >= 60) THEN
+				minutos <= 0;
+				horas <= horas + 1;
+			END IF;
+			
+			IF(horas >= 24) THEN
+				horas <= 0;
+			END IF;
+			
+		END IF; -- habilitaContagem
+	
+	END PROCESS; -- clock
+	
+	PROCESS(control)
+	BEGIN
+		IF(falling_edge(control)) THEN
+		
+		END IF; -- falling_edge(control)
+	END PROCESS; -- control
+
+END rtc;

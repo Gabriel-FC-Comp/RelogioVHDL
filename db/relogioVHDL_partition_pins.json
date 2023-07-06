@@ -1,0 +1,185 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ledAlarme",
+					"strict" : false
+				},
+				{
+					"name" : "disp0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "disp0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "disp0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "disp0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "disp0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "disp1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "disp1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "disp1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "disp1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "disp2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "disp2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "disp2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "disp2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "disp2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "disp2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "disp2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "disp3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "disp3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "disp3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "disp3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "disp3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "disp3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "disp3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "disp4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "disp4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "disp4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "disp4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "disp4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "disp4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "disp4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "disp5[6]",
+					"strict" : false
+				},
+				{
+					"name" : "disp5[5]",
+					"strict" : false
+				},
+				{
+					"name" : "disp5[4]",
+					"strict" : false
+				},
+				{
+					"name" : "disp5[3]",
+					"strict" : false
+				},
+				{
+					"name" : "disp5[2]",
+					"strict" : false
+				},
+				{
+					"name" : "disp5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "disp5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "habilitaAlarme",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "editaParametro",
+					"strict" : false
+				},
+				{
+					"name" : "prox",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "enter",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

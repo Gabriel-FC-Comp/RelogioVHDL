@@ -1,0 +1,121 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2022  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+# Date created = 21:54:08  May 29, 2023
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		relogioVHDL_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M50DAF484C7G
+set_global_assignment -name TOP_LEVEL_ENTITY relogioVHDL
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:54:08  MAY 29, 2023"
+set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name VHDL_FILE relogioVHDL.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE moduloTempo.vhd
+set_global_assignment -name VHDL_FILE moduloCronometro.vhd
+set_global_assignment -name VHDL_FILE moduloAlarme.vhd
+set_location_assignment PIN_P11 -to clock
+set_location_assignment PIN_B8 -to prox
+set_location_assignment PIN_A7 -to enter
+set_location_assignment PIN_F15 -to habilitaAlarme
+set_location_assignment PIN_C10 -to reset
+set_location_assignment PIN_C11 -to editaParametro
+set_location_assignment PIN_J20 -to disp0[0]
+set_location_assignment PIN_K20 -to disp0[1]
+set_location_assignment PIN_L18 -to disp0[2]
+set_location_assignment PIN_N18 -to disp0[3]
+set_location_assignment PIN_M20 -to disp0[4]
+set_location_assignment PIN_N19 -to disp0[5]
+set_location_assignment PIN_N20 -to disp0[6]
+set_location_assignment PIN_L19 -to disp0[7]
+set_location_assignment PIN_F18 -to disp1[0]
+set_location_assignment PIN_E20 -to disp1[1]
+set_location_assignment PIN_E19 -to disp1[2]
+set_location_assignment PIN_J18 -to disp1[3]
+set_location_assignment PIN_H19 -to disp1[4]
+set_location_assignment PIN_F19 -to disp1[5]
+set_location_assignment PIN_F20 -to disp1[6]
+set_location_assignment PIN_F17 -to disp1[7]
+set_location_assignment PIN_F21 -to disp2[0]
+set_location_assignment PIN_E22 -to disp2[1]
+set_location_assignment PIN_E21 -to disp2[2]
+set_location_assignment PIN_C19 -to disp2[3]
+set_location_assignment PIN_C20 -to disp2[4]
+set_location_assignment PIN_D19 -to disp2[5]
+set_location_assignment PIN_E17 -to disp2[6]
+set_location_assignment PIN_D22 -to disp2[7]
+set_location_assignment PIN_B20 -to disp3[0]
+set_location_assignment PIN_A20 -to disp3[1]
+set_location_assignment PIN_B19 -to disp3[2]
+set_location_assignment PIN_A21 -to disp3[3]
+set_location_assignment PIN_B21 -to disp3[4]
+set_location_assignment PIN_C22 -to disp3[5]
+set_location_assignment PIN_B22 -to disp3[6]
+set_location_assignment PIN_A19 -to disp3[7]
+set_location_assignment PIN_C18 -to disp4[0]
+set_location_assignment PIN_D18 -to disp4[1]
+set_location_assignment PIN_E18 -to disp4[2]
+set_location_assignment PIN_B16 -to disp4[3]
+set_location_assignment PIN_A17 -to disp4[4]
+set_location_assignment PIN_A18 -to disp4[5]
+set_location_assignment PIN_B17 -to disp4[6]
+set_location_assignment PIN_A16 -to disp4[7]
+set_location_assignment PIN_C14 -to disp5[0]
+set_location_assignment PIN_E15 -to disp5[1]
+set_location_assignment PIN_C15 -to disp5[2]
+set_location_assignment PIN_C16 -to disp5[3]
+set_location_assignment PIN_E16 -to disp5[4]
+set_location_assignment PIN_D17 -to disp5[5]
+set_location_assignment PIN_C17 -to disp5[6]
+set_location_assignment PIN_D15 -to disp5[7]
+set_location_assignment PIN_A8 -to ledsModulos[2]
+set_location_assignment PIN_A9 -to ledsModulos[1]
+set_location_assignment PIN_A10 -to ledsModulos[0]
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste1.vwf
+set_location_assignment PIN_B11 -to ledAlarme
+set_global_assignment -name VHDL_FILE timeMemory.vhd
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,0 +1,94 @@
+-- Bibliotecas
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+-- Descrição da Entidade
+ENTITY moduloTempo IS
+PORT(
+	clock : IN std_logic;
+	habilitaEdicao : IN std_logic;
+	reset : IN std_logic;
+	parametro_a_editar : IN std_logic;
+	control : IN std_logic;
+	minOut, hourOut : OUT integer;
+);
+END moduloTempo;
+
+-- Descrição da Arquitetura
+ARCHITECTURE rtc OF moduloTempo IS
+	-- Declaração de sinais
+	SIGNAL ticks,segundos,minutos,horas : integer := 0;
+	
+BEGIN
+
+	PROCESS(clock)
+	BEGIN
+	
+		IF(rising_edge(clock)) THEN
+			ticks <= ticks+1;
+		END IF;
+	
+		IF(ticks >= 50000000) THEN
+			ticks <= 0;
+			segundos <= segundos + 1;
+		END IF;
+		
+		IF(segundos >= 60) THEN
+			segundos <= 0;
+			minutos <= minutos + 1;
+		END IF;
+		
+		IF(minutos >= 60) THEN
+			minutos <= 0;
+			horas <= horas + 1;
+		END IF;
+		
+		IF(horas >= 24) THEN
+			horas <= 0;
+		END IF;
+	
+	END PROCESS; -- clock
+	
+	PROCESS(control)
+	BEGIN
+	
+		IF(falling_edge(control)) THEN
+			IF(habilitaEdicao = '1') THEN 
+				IF(reset = '1') THEN -- Se deseja-se zerar o parâmetro
+					IF(parametro_a_editar = '0') THEN
+						horas <= 0;
+					ELSE
+						segundos <= 0;
+						minutos <= 0;
+				END IF; -- parametro_a_editar
+						
+				ELSE
+				
+					IF(parametro_a_editar = '0') THEN
+						IF(horas >= 24) THEN
+							horas <= 0;
+						ELSE
+							horas <= horas+1;
+						END IF; -- horaAlarme
+					ELSE
+						IF(minutos >= 60) THEN
+							minutos <= 0;
+						ELSE
+							minutos <= minutos+1;
+						END IF; -- minutoAlarme
+								
+					END IF; -- parametro_a_editar
+							
+				END IF; -- reset
+					
+			END IF; -- habilitaEdicao
+			
+		END IF; -- falling_edge(control)
+	
+	END PROCESS; -- control
+	
+	minOut <= minutos;
+	hourOut <= horas;
+	
+END rtc;

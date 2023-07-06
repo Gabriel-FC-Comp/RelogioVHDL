@@ -1,0 +1,6 @@
+
+State Machine - |relogioVHDL|estado
+Name estado.MostraCronometro estado.MostraAlarme estado.MostraHora 
+estado.MostraHora 0 0 0 
+estado.MostraAlarme 0 1 1 
+estado.MostraCronometro 1 0 1 
